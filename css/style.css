@@ -1441,7 +1441,7 @@ h2 {
     background-image: url("../img/developers/dev_slider_img_one.svg");
     background-repeat: no-repeat;
     object-fit: contain;
-    width: calc(65vw + 91.068px);
+    width: 100%;
     height: calc(17.2vw + 178.437px);
     margin-top: calc(4.1vw + 3.01px);
     border-radius: 45px;
