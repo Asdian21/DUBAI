@@ -11,7 +11,6 @@ header {
   display: flex;
   margin-top: 24px;
   margin-left: calc(17.5vw - 45.534px);
-  margin-right: calc(17.5vw - 45.534px);
   align-items: center;
 }
 
@@ -237,7 +236,7 @@ header .telephone {
 
 .face {
   margin-top: calc(1.9vw + 42.718px);
-  width: 1920px;
+  width: calc(94.2vw + 111.845px);
   height: calc(14.4vw + 507.117px);
 }
 
