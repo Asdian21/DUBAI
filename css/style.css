@@ -244,7 +244,6 @@ header .telephone {
   width: calc(94.2vw + 111.845px);
   background-image: url("../img/face/bg_img.svg");
   background-repeat: no-repeat;
-  height: calc(2.7vw + 507.049px);
   background-position: center;
 }
 
@@ -404,16 +403,16 @@ h1 .span_2 {
   font-weight: 400;
   line-height: 122%;
   margin-top: calc(1.5vw + 4.667px);
-  margin-right: calc(4vw + 12.617px);
+  margin-right: calc(2vw + 12.617px);
   margin-bottom: calc(1.4vw + 4.5px);
   margin-left: calc(1.8vw + 5.667px);
 }
 
 .select .green_search {
   width: 268px;
-  padding-top: calc(1.1vw + 5px);
+  padding-top: calc(1.6vw + 5px);
   padding-right: calc(2.4vw + 7.667px);
-  padding-bottom: calc(1.1vw + 5px);
+  padding-bottom: calc(1.6vw + 5px);
   padding-left: calc(2.4vw + 7.667px);
   border-radius: 99px;
   border: 0;
