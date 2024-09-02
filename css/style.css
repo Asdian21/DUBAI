@@ -1226,88 +1226,86 @@ h2 {
 /* Districts start */
 .districts {
   display: flex;
-  .districts_div {
-    margin-top: calc(7.1vw + 33.301px);
-    margin-bottom: calc(7.1vw + 33.301px);
-    margin-left: auto;
-    margin-right: auto;
-    .h2_buttons {
-      display: flex;
-      margin-left: 0;
-      margin-right: 0;
-      margin-bottom: calc(2.3vw + 15.262px);
-      .districts {
-        width: calc(6.9vw + 154.029px);
-        margin-right: calc(49.8vw - 11.65px);
-        font-family: "NeutralFaceRegular";
-        font-size: calc(1.6vw + 34.175px);
-        font-weight: 400;
-        line-height: 103.796875%; /* 66.43px/64 */
-      }
-    }
-    .splide_3 .splide__list {
-      display: flex;
-      gap: calc(0.6vw + 7.573px);
-
-      .district_card_top {
-        background-color: #208b95;
-        width: calc(6.8vw + 189.515px);
-        height: calc(4.9vw + 86.796px);
-        border-radius: 45px 0;
-        padding-top: calc(1.4vw + 26.903px);
-        padding-left: calc(0.8vw + 20.845px);
-
-        h3 {
-          font-family: "NeutralFaceRegular";
-          font-size: calc(0.9vw + 16.602px);
-          font-weight: 400;
-          line-height: 103.794118%; /* 35.29px/34 */
-          color: white;
-        }
-
-        span {
-          font-family: "Commissioner-Regular";
-          font-size: calc(0.4vw + 8.544px);
-          font-weight: 500;
-          line-height: 122.3125%; /* 19.57px/16 */
-          color: white;
-        }
-      }
-
-      .district_card_one {
-        width: calc(6.4vw + 310.971px);
-        height: calc(14.4vw + 371.874px);
-        background-image: url("../img/districts/district_one.svg");
-        border-radius: 45px;
-
-        h3 {
-          margin-bottom: calc(0.3vw + 8.786px);
-        }
-      }
-      .district_card_two {
-        width: calc(6.4vw + 310.971px);
-        height: calc(14.4vw + 371.874px);
-        background-image: url("../img/districts/district_two.svg");
-        border-radius: 45px;
-
-        h3 {
-          width: calc(11vw + 108.738px);
-          margin-bottom: calc(0.3vw + 0.786px);
-        }
-      }
-      .district_card_three {
-        width: calc(6.4vw + 310.971px);
-        height: calc(14.4vw + 371.874px);
-        background-image: url("../img/districts/district_three.svg");
-        border-radius: 45px;
-
-        h3 {
-          margin-bottom: calc(0.3vw + 8.786px);
-        }
-      }
-    }
-  }
 }
+.districts .districts_div {
+  margin-top: calc(7.1vw + 33.301px);
+  margin-bottom: calc(7.1vw + 33.301px);
+  margin-left: auto;
+  margin-right: auto;
+}
+.districts_div .h2_buttons {
+  display: flex;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: calc(2.3vw + 15.262px);
+}
+.districts_div .h2_buttons .districts {
+  width: calc(6.9vw + 154.029px);
+  margin-right: calc(49.8vw - 11.65px);
+  font-family: "NeutralFaceRegular";
+  font-size: calc(1.6vw + 34.175px);
+  font-weight: 400;
+  line-height: 103.796875%; /* 66.43px/64 */
+}
+.splide_3 .splide__list {
+  display: flex;
+  gap: calc(0.6vw + 7.573px);
+}
+.splide__list .district_card_top {
+  background-color: #208b95;
+  width: calc(6.8vw + 189.515px);
+  height: calc(4.9vw + 86.796px);
+  border-radius: 45px 0;
+  padding-top: calc(1.4vw + 26.903px);
+  padding-left: calc(0.8vw + 20.845px);
+}
+.district_card_top h3 {
+  font-family: "NeutralFaceRegular";
+  font-size: calc(0.9vw + 16.602px);
+  font-weight: 400;
+  line-height: 103.794118%; /* 35.29px/34 */
+  color: white;
+}
+
+.district_card_top span {
+  font-family: "Commissioner-Regular";
+  font-size: calc(0.4vw + 8.544px);
+  font-weight: 500;
+  line-height: 122.3125%; /* 19.57px/16 */
+  color: white;
+}
+
+.district_card_one {
+  width: calc(6.4vw + 310.971px);
+  height: calc(14.4vw + 371.874px);
+  background-image: url("../img/districts/district_one.svg");
+  border-radius: 45px;
+}
+.district_card_one h3 {
+  margin-bottom: calc(0.3vw + 8.786px);
+}
+
+.district_card_two {
+  width: calc(6.4vw + 310.971px);
+  height: calc(14.4vw + 371.874px);
+  background-image: url("../img/districts/district_two.svg");
+  border-radius: 45px;
+}
+.district_card_two h3 {
+  width: calc(11vw + 108.738px);
+  margin-bottom: calc(0.3vw + 0.786px);
+}
+
+.district_card_three {
+  width: calc(6.4vw + 310.971px);
+  height: calc(14.4vw + 371.874px);
+  background-image: url("../img/districts/district_three.svg");
+  border-radius: 45px;
+}
+.district_card_three h3 {
+  margin-bottom: calc(0.3vw + 8.786px);
+}
+
 /* Districts end */
 
 /* Developers start */

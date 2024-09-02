@@ -4,18 +4,8 @@ document.addEventListener("DOMContentLoaded", function () {
     arrows: false,
   });
   splide.mount();
-});
 
-document.addEventListener("DOMContentLoaded", function () {
-  var splide = new Splide(".splide_2", {
-    perPage: 3,
-    arrows: false,
-  });
-  splide_2.mount();
-});
-
-document.addEventListener("DOMContentLoaded", function () {
-  var splide = new Splide(".splide_3", {
+  var splide3 = new Splide(".splide_3", {
     perPage: 3,
     arrows: false,
     breakpoints: {
@@ -27,12 +17,22 @@ document.addEventListener("DOMContentLoaded", function () {
       },
     },
   });
-  splide_3.mount();
+  splide3.mount();
 });
 
-function toggleMenu() {
-  const menu = document.getElementById("menu");
-  const body = document.body;
-  menu.classList.toggle("active");
-  body.classList.toggle("menu-open"); // Переключаем класс 'menu-open' на body
-}
+// });
+
+// document.addEventListener("DOMContentLoaded", function () {
+//   var splide = new Splide(".splide_2", {
+//     perPage: 3,
+//     arrows: false,
+//   });
+//   splide_2.mount();
+// });
+
+// function toggleMenu() {
+//   const menu = document.getElementById("menu");
+//   const body = document.body;
+//   menu.classList.toggle("active");
+//   body.classList.toggle("menu-open"); // Переключаем класс 'menu-open' на body
+// }
