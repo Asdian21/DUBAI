@@ -11,19 +11,19 @@ document.addEventListener("DOMContentLoaded", function () {
   //   });
   //   splide_2.mount();
 
-  var splide_3 = new Splide(".splide_3", {
-    perPage: 3,
-    arrows: false,
-    breakpoints: {
-      768: {
-        perPage: 2,
-      },
-      480: {
-        perPage: 1,
-      },
-    },
-  });
-  splide_3.mount();
+  // var splide_3 = new Splide(".splide_3", {
+  //   perPage: 3,
+  //   arrows: false,
+  //   breakpoints: {
+  //     768: {
+  //       perPage: 2,
+  //     },
+  //     480: {
+  //       perPage: 1,
+  //     },
+  //   },
+  // });
+  // splide_3.mount();
 });
 
 // function toggleMenu() {
