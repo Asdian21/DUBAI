@@ -5,7 +5,13 @@ document.addEventListener("DOMContentLoaded", function () {
   });
   splide.mount();
 
-  var splide3 = new Splide(".splide_3", {
+  //   var splide_2 = new Splide(".splide_2", {
+  //     perPage: 3,
+  //     arrows: false,
+  //   });
+  //   splide_2.mount();
+
+  var splide_3 = new Splide(".splide_3", {
     perPage: 3,
     arrows: false,
     breakpoints: {
@@ -17,18 +23,8 @@ document.addEventListener("DOMContentLoaded", function () {
       },
     },
   });
-  splide3.mount();
+  splide_3.mount();
 });
-
-// });
-
-// document.addEventListener("DOMContentLoaded", function () {
-//   var splide = new Splide(".splide_2", {
-//     perPage: 3,
-//     arrows: false,
-//   });
-//   splide_2.mount();
-// });
 
 // function toggleMenu() {
 //   const menu = document.getElementById("menu");
