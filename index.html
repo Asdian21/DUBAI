@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./fonts/Commissioner-Regular.ttf" />
     <link rel="stylesheet" href="./fonts/NeutralFaceRegular.ttf" />
+    <link
+      rel="stylesheet"
+      href="./node_modules/@splidejs/splide/dist/css/splide.min.css"
+    />
   </head>
   <body>
     <header>
@@ -72,7 +76,11 @@
           ПРОДАЖА <span class="span_1">И АРЕНДА</span>
           <span class="span_2">НОВОСТРОЕК В ДУБАИ</span>
         </h1>
-        <section class="splide" aria-label="Splide Basic HTML Example">
+        <section
+          class="splide"
+          aria-label="Splide Basic HTML Example"
+          id="splide_1"
+        >
           <div class="splide__track">
             <ul class="splide__list">
               <li class="splide__slide">
@@ -180,50 +188,56 @@
         </div>
       </div>
     </section>
-    <!-- 
+
     <section class="recommendations">
       <div class="h2_buttons">
         <h2 class="recommends">РЕКОМЕНДУЕМ</h2>
-        <div class="buttons">
-          <button class="left">
-            <img src="./img/recommendations/left_arrow.svg" alt="" />
-          </button>
-          <button class="right">
-            <img src="./img/recommendations/right_arrow.svg" alt="" />
-          </button>
-        </div>
       </div>
-      <div class="recommends_splide">
-        <div class="placeOne">
-          <p>AVANI PALM VIEW</p>
-          <button class="spear">
-            <img src="./img/face/spear.svg" alt="" />
-          </button>
-        </div>
-        <div class="placeTwo">
-          <p>400 МЕТРОВ ОТ ПЛЯЖА МИНА-СЕЙАХИ</p>
-        </div>
-        <div class="placeThree">
-          <p>РЕСТОРАН, ОТКРЫТЫЙ БАССЕЙН, БЕСПЛАТНЫЙ WI-FI</p>
-        </div>
-        <div class="placeFour">
-          <p>10 ПРЕДЛОЖЕНИЙ ОТ $309.484</p>
-          <div class="placeFour_div">
-            <button class="overview">СМОТРЕТЬ</button>
-            <button>
-              <img
-                src="./img/face/fav_black.svg"
-                alt=""
-                class="placeFour_img"
-              />
-            </button>
-          </div>
-        </div>
-        <div class="placeFive">
-          <p>DUBAI CREEK HARBOUR</p>
-          <button>
-            <img src="./img/face/spear.svg" alt="" />
-          </button>
+      <div class="splide" aria-label="Splide Basic HTML Example" id="splide_2">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <div class="placeOne">
+                <p>AVANI PALM VIEW</p>
+                <button class="spear">
+                  <img src="./img/face/spear.svg" alt="" />
+                </button>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="placeTwo">
+                <p>400 МЕТРОВ ОТ ПЛЯЖА МИНА-СЕЙАХИ</p>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="placeThree">
+                <p>РЕСТОРАН, ОТКРЫТЫЙ БАССЕЙН, БЕСПЛАТНЫЙ WI-FI</p>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="placeFour">
+                <p>10 ПРЕДЛОЖЕНИЙ ОТ $309.484</p>
+                <div class="placeFour_div">
+                  <button class="overview">СМОТРЕТЬ</button>
+                  <button>
+                    <img
+                      src="./img/face/fav_black.svg"
+                      alt=""
+                      class="placeFour_img"
+                    />
+                  </button>
+                </div>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <div class="placeFive">
+                <p>DUBAI CREEK HARBOUR</p>
+                <button>
+                  <img src="./img/face/spear.svg" alt="" />
+                </button>
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
     </section>
@@ -231,14 +245,6 @@
     <section class="reliable_projects">
       <div class="h2_buttons">
         <h2 class="recommends">НАДЁЖНЫЕ ПРОЕКТЫ</h2>
-        <div class="buttons">
-          <button class="left">
-            <img src="./img/relevant/left_arrow.svg" alt="" />
-          </button>
-          <button class="right">
-            <img src="./img/relevant/right_arrow.svg" alt="" />
-          </button>
-        </div>
       </div>
       <div class="buttons_container">
         <button class="project_button_one">
@@ -257,7 +263,11 @@
           <p>Лофт</p>
         </button>
       </div>
-      <section class="splide_2" aria-label="Splide Basic HTML Example">
+      <section
+        class="splide"
+        aria-label="Splide Basic HTML Example"
+        id="splide_3"
+      >
         <div class="splide__track">
           <ul class="splide__list">
             <li class="splide__slide">
@@ -322,8 +332,7 @@
           </ul>
         </div>
       </section>
-    </section> 
-    -->
+    </section>
 
     <section class="unique_select">
       <h2>УНИКАЛЬНЫЙ ВЫБОР ЖИЛЬЯ В КАТАЛОГЕ</h2>
@@ -493,60 +502,61 @@
       </div>
     </section>
 
-    <!-- <section class="districts">
-      <div class="districts_div">
-        <div class="h2_buttons">
-          <h2 class="districts">РАЙОНЫ</h2>
-          <div class="buttons">
-            <button class="left">
-              <img src="./img/relevant/left_arrow.svg" alt="" />
-            </button>
-            <button class="right">
-              <img src="./img/relevant/right_arrow.svg" alt="" />
-            </button>
-          </div>
-        </div>
-        <div class="splide_3">
-          <div class="splide__track">
-            <ul class="splide__list">
-              <li class="splide__slide">
-                <div class="district_card_one">
-                  <div class="district_card_top">
-                    <h3>BUR DUBAI</h3>
-                    <span>от 43 240 $ • 10 предложений</span>
-                  </div>
-                  <button>
-                    <img src="./img/districts/district_arrow.svg" alt="" />
-                  </button>
-                </div>
-              </li>
-              <li class="splide__slide">
-                <div class="district_card_two">
-                  <div class="district_card_top">
-                    <h3>DOWNTOWN DUBAI</h3>
-                    <span>от 43 240 $ • 10 предложений</span>
-                  </div>
-                  <button>
-                    <img src="./img/districts/district_arrow.svg" alt="" />
-                  </button>
-                </div>
-              </li>
-              <li class="splide__slide">
-                <div class="district_card_three">
-                  <div class="district_card_top">
-                    <h3>DUBAI MARINA</h3>
-                    <span>от 43 240 $ • 10 предложений</span>
-                  </div>
-                  <button>
-                    <img src="./img/districts/district_arrow.svg" alt="" />
-                  </button>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
+    <div class="h2_buttons">
+      <h2 class="districts">РАЙОНЫ</h2>
+      <div class="buttons">
+        <button class="left">
+          <img src="./img/relevant/left_arrow.svg" alt="" />
+        </button>
+        <button class="right">
+          <img src="./img/relevant/right_arrow.svg" alt="" />
+        </button>
       </div>
-    </section> -->
+    </div>
+    <div
+      class="splide"
+      role="group"
+      aria-label="Splide Basic HTML Example"
+      id="splide_4"
+    >
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li class="splide__slide">
+            <div class="district_card_one">
+              <div class="district_card_top">
+                <h3>BUR DUBAI</h3>
+                <span>от 43 240 $ • 10 предложений</span>
+              </div>
+              <button>
+                <img src="./img/districts/district_arrow.svg" alt="" />
+              </button>
+            </div>
+          </li>
+          <li class="splide__slide">
+            <div class="district_card_two">
+              <div class="district_card_top">
+                <h3>DOWNTOWN DUBAI</h3>
+                <span>от 43 240 $ • 10 предложений</span>
+              </div>
+              <button>
+                <img src="./img/districts/district_arrow.svg" alt="" />
+              </button>
+            </div>
+          </li>
+          <li class="splide__slide">
+            <div class="district_card_three">
+              <div class="district_card_top">
+                <h3>DUBAI MARINA</h3>
+                <span>от 43 240 $ • 10 предложений</span>
+              </div>
+              <button>
+                <img src="./img/districts/district_arrow.svg" alt="" />
+              </button>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
 
     <section class="developers">
       <div class="developers_top">
@@ -827,6 +837,54 @@
     </footer>
 
     <script src="./js/script.js"></script>
-    <script src="./js/splide.min.js"></script>
+    <script src="./node_modules/@splidejs/splide/dist/js/splide.min.js"></script>
+    <script>
+      var splide = new Splide("#splide_1", {
+        perPage: 1,
+        arrows: false,
+      });
+      splide.mount();
+    </script>
+    <script>
+      var splide = new Splide("#splide_2", {
+        perPage: 5,
+        pagination: false,
+        breakpoints: {
+          1500: {
+            perPage: 4,
+          },
+          1200: {
+            perPage: 3,
+          },
+          900: {
+            perPage: 2,
+          },
+          600: {
+            perPage: 1,
+          },
+        },
+      });
+      splide.mount();
+    </script>
+    <script>
+      var splide = new Splide("#splide_3", {
+        perPage: 3,
+        breakpoints: {
+          1300: {
+            perPage: 2,
+          },
+        },
+      });
+      splide.mount();
+    </script>
+    <script>
+      var splide = new Splide("#splide_4", {
+        type: "loop",
+        perPage: 3,
+        perMove: 1,
+      });
+
+      splide.mount();
+    </script>
   </body>
 </html>

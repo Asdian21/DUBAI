@@ -2,18 +2,23 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* outline: 2px solid red; */
 }
 
 /* Header start */
 
 header {
-  width: calc(65vw + 91.068px);
+  width: 100%;
   display: flex;
+  justify-content: space-around;
   margin-top: 24px;
-  margin-left: calc(17.5vw - 45.534px);
   align-items: center;
 }
-
+@media (max-width: 900px) {
+  header {
+    margin-left: 0;
+  }
+}
 header .rectangle {
   width: calc(1.7vw + 116.689px);
   min-width: 123px;
@@ -236,13 +241,12 @@ header .telephone {
 
 .face {
   margin-top: calc(1.9vw + 42.718px);
-  width: calc(94.2vw + 111.845px);
+  width: 100%;
   height: calc(14.4vw + 507.117px);
 }
 
 .background-image {
-  width: calc(94.2vw + 111.845px);
-  background-image: url("../img/face/bg_img.svg");
+  background-image: url("../img/face/bg_img.png");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -335,12 +339,14 @@ h1 .span_2 {
 
 .select {
   display: flex;
-  width: calc(60vw + 190px);
   height: calc(2.6vw + 40px);
   margin: calc(8.2vw - 2.667px) auto 37px;
+  margin-left: 30px;
+  margin-right: 30px;
   background-color: #fff;
   border-radius: 99px;
   align-items: center;
+  justify-content: space-around;
 }
 
 .select .buy {
@@ -409,6 +415,7 @@ h1 .span_2 {
 }
 
 .select .green_search {
+  margin-left: auto;
   width: 268px;
   padding-top: calc(1.6vw + 5px);
   padding-right: calc(2.4vw + 7.667px);
@@ -456,8 +463,6 @@ h1 .span_2 {
 
 .recommendations {
   margin-top: calc(1.9vw + 42.718px);
-  width: 1342px;
-  margin-left: calc(17.5vw - 45.534px);
 }
 
 .reliable_projects {
@@ -478,44 +483,18 @@ h2 {
   line-height: 104%;
 }
 
-.h2_buttons .recommends {
-  width: 507px;
-  margin-right: 723px;
+.splide__arrow:disabled {
+  opacity: 1;
 }
 
-.h2_buttons .buttons {
-  width: 110px;
-  height: 50px;
+/* Не получается отключить функцию disabled, так как этих селекторов несколько */
+
+.placeOne {
   display: flex;
-  gap: 10px;
-  border: 0px;
-  border-radius: 99px;
-  background-color: #fff;
-}
-
-.buttons .left {
-  width: 50px;
-  background-color: #fff;
-  border-radius: 45px;
-  border: 1px solid black;
-}
-.buttons .right {
-  width: 50px;
-  background-color: #fff;
-  border-radius: 45px;
-  border: 1px solid black;
-}
-
-.recommends_splide {
-  width: 1342px;
+  flex-direction: column;
   height: 430px;
-  display: flex;
-  gap: 20px;
-}
-
-.recommends_splide .placeOne {
   width: 253px;
-  background-image: url("../img/recommendations/placeOne.svg");
+  background-image: url("../img/recommendations/placeOne.png");
   border-radius: 45px;
 }
 
@@ -537,10 +516,14 @@ h2 {
   height: 50px;
 }
 
-.recommends_splide .placeTwo {
+.placeTwo {
+  display: flex;
+  flex-direction: column;
   width: 252px;
-  background-image: url("../img/recommendations/placeTwo.svg");
+  background-image: url("../img/recommendations/placeTwo.png");
+  background-repeat: no-repeat;
   border-radius: 45px;
+  height: 430px;
 }
 
 .placeTwo p {
@@ -553,9 +536,12 @@ h2 {
   margin: 323px 26px 31px 30px;
 }
 
-.recommends_splide .placeThree {
+.placeThree {
+  display: flex;
+  flex-direction: column;
+  height: 430px;
   width: 252px;
-  background-image: url("../img/recommendations/placeThree.svg");
+  background-image: url("../img/recommendations/placeThree.png");
   border-radius: 45px;
 }
 
@@ -569,9 +555,12 @@ h2 {
   margin: 42px 18px 276px 31px;
 }
 
-.recommends_splide .placeFour {
+.placeFour {
+  display: flex;
+  flex-direction: column;
+  height: 430px;
   width: 252px;
-  background-image: url("../img/recommendations/placeFour.svg");
+  background-image: url("../img/recommendations/placeFour.png");
   border-radius: 45px;
 }
 
@@ -607,9 +596,12 @@ h2 {
   background-color: none;
 }
 
-.recommends_splide .placeFive {
+.placeFive {
+  display: flex;
+  flex-direction: column;
+  height: 430px;
   width: 253px;
-  background-image: url("../img/recommendations/placeFive.svg");
+  background-image: url("../img/recommendations/placeFive.png");
   border-radius: 45px;
 }
 
@@ -637,20 +629,12 @@ h2 {
 
 .reliable_projects {
   margin-top: calc(1.9vw + 42.718px);
-  width: 1342px;
-  margin-left: calc(17.5vw - 45.534px);
 }
 
 .reliable_projects .h2_buttons {
-  width: 1342px;
   margin-top: 0px;
   display: flex;
   margin-bottom: 60px;
-}
-
-.h2_buttons .recommends {
-  width: 741px;
-  margin-right: 489px;
 }
 
 .reliable_projects .buttons_container {
