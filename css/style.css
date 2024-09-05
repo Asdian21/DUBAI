@@ -949,6 +949,7 @@ h2 {
   }
 
   .relevant_cards {
+    justify-content: center;
     width: calc(65.2vw + 91.068px);
     display: flex;
     flex-wrap: wrap;
