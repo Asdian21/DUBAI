@@ -247,21 +247,42 @@
         <h2 class="recommends">НАДЁЖНЫЕ ПРОЕКТЫ</h2>
       </div>
       <div class="buttons_container">
-        <button class="project_button_one">
-          <p>Все</p>
-        </button>
-        <button class="project_button_two">
-          <p>Квартира</p>
-        </button>
-        <button class="project_button_three">
-          <p>Вилла</p>
-        </button>
-        <button class="project_button_four">
-          <p>Пентхаус</p>
-        </button>
-        <button class="project_button_five">
-          <p>Лофт</p>
-        </button>
+        <div
+          class="splide"
+          role="group"
+          aria-label="Splide Basic HTML Example"
+          id="projects_container"
+        >
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <button class="project_button_one">
+                  <p>Все</p>
+                </button>
+              </li>
+              <li class="splide__slide">
+                <button class="project_button_two">
+                  <p>Квартира</p>
+                </button>
+              </li>
+              <li class="splide__slide">
+                <button class="project_button_three">
+                  <p>Вилла</p>
+                </button>
+              </li>
+              <li class="splide__slide">
+                <button class="project_button_four">
+                  <p>Пентхаус</p>
+                </button>
+              </li>
+              <li class="splide__slide">
+                <button class="project_button_five">
+                  <p>Лофт</p>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
       <section
         class="splide"
@@ -865,15 +886,37 @@
           1300: {
             perPage: 2,
           },
+          900: {
+            perPage: 1,
+          },
+        },
+      });
+      splide.mount();
+    </script>
+    <script>
+      var splide = new Splide("#projects_container", {
+        perPage: 5,
+        gap: "10px",
+        arrows: false,
+        pagination: false,
+        breakpoints: {
+          900: {
+            perPage: 3,
+          },
+          600: {
+            perPage: 2,
+          },
+          450: {
+            perPage: 1,
+          },
         },
       });
       splide.mount();
     </script>
     <script>
       var splide = new Splide("#splide_4", {
-        type: "loop",
-        perPage: 1,
-        perMove: 1,
+        perPage: 3,
+        breakpoints: {},
       });
 
       splide.mount();
